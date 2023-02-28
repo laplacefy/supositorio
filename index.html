@@ -12,12 +12,9 @@
     <br>
     <header>
         <nav>
-          <p>VAM Viagens</p>
+          <p>VAMT Viagens</p>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#pacotes">Pacotes</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="index.html">Home</a></li>
           </ul>
         </nav>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -26,10 +23,10 @@
                 <img src="imagens/84689.jpg" class="d-block w-100" alt="..." height="800px">
               </div>
               <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="imagens/cristo-redentor-3.jpg" class="d-block w-100" alt="..." height="800px">
               </div>
               <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="imagens/viagem-a-asia-740x360.jpg" class="d-block w-100" alt="..." height="800px">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -102,79 +99,21 @@
           </div>
       </section>
     
-      <section  id="servicos" class="servicos">
-        <h1 class="servicos-title">Serviços</h1>
-        <div class="servicos-cards">
-          <div class="card">
-            <i data-feather="map"></i>
-            <div class="card-content">
-              <h3>Tour guiados</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing sciunt deserunt, alias illo!</p>
-            </div>
-            <button>Saiba mais</button>
-          </div>
     
-          <div class="card">
-            <i data-feather="camera"></i>
-            <div class="card-content">
-              <h3>Fotográfia Profissional</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing sciunt deserunt, alias illo!</p>
-            </div>
-            <button>Saiba mais</button>
-          </div>
-          
-          <div class="card">
-            <i data-feather="navigation"></i>
-            <div class="card-content">
-              <h3>Aluguel de Veículo</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing sciunt deserunt, alias illo!</p>
-            </div>
-            <button>Saiba mais</button>
-          </div>
-        </div>
-      </section>
     
       <section id="contato" class="contato">
         <div class="contato-card">
           <h1>Entre em contato</h1>
           <ul>
             <li><i data-feather="map-pin"></i>Rua central</li>
-            <li><i data-feather="mail"></i>contato@rodrigoviagens</li>
-            <li><i data-feather="phone"></i>(85) 3100-4455</li>
+            <li><i data-feather="mail"></i>vamtoficial@gmail.com</li>
+            <li><i data-feather="phone"></i>(43) 991106819</li>
           </ul>
         </div>
         <!--The div element for the map -->
         <div id="map"></div>
       </section>
-    
-    
-      <script>
-        // feather icons
-        feather.replace();
-    
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-    
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-                });
-            });
-        });
-        // Initialize and add the map
-        function initMap() {
-          // The location of Uluru
-          // var uluru = {lat: -25.344, lng: 131.036};
-          var uluru = { lat: -3.71839, lng: -38.5434 };
-          // The map, centered at Uluru
-          var map = new google.maps.Map(
-            document.getElementById('map'), { zoom: 4, center: uluru });
-          // The marker, positioned at Uluru
-          var marker = new google.maps.Marker({ position: uluru, map: map });
-        }
-      </script>
-    
-      
+  
       </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
